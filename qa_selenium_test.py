@@ -13,3 +13,5 @@ actual_text=driver.find_element(By.XPATH,'//*[@id="example_filter"]/label/input'
 actual_text == expected_text#, f"Text mismatch! Expected: {expected_text}, Got: {actual_text}"
 
 time.sleep(2)
+
+driver.quit()
