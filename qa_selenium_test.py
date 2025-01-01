@@ -11,6 +11,7 @@ expected_text = "Showing 1 to 5 of 5 entries (filtered from 24 total entries)"
 actual_text=driver.find_element(By.XPATH,'//*[@id="example_filter"]/label/input').send_keys('New York')
 
 actual_text == expected_text#, f"Text mismatch! Expected: {expected_text}, Got: {actual_text}"
+print(actual_text)
 
 time.sleep(2)
 
